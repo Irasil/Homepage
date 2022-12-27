@@ -1,0 +1,118 @@
+#myVideo {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 0px;
+}
+
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.0);;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.idbody {
+  background-color:rgb(127, 214, 255) ;
+  max-width: 100%;
+  padding-top: 70px;
+  
+  
+  top: 100px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+
+}
+.content1 {
+  position: relative;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  padding-left: 20%;
+  margin-top: 5%;
+}
+.logo{
+  position:relative;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7%;
+  size: 10%;
+  
+}
+
+.logocenter{
+  position: absolute;
+  display:block;
+  top: 10%;
+  left:30%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+  
+}
+.content2{
+  margin-top: 0%;
+}
+
+.text{
+  text-align: center;
+  margin-top: auto;
+  margin-left: auto;
+ margin-right: auto;
+ padding: 20px; 
+ }
+
+.image{
+  
+  width: 100%;
+  height: auto;
+  padding: 12px;  
+}
+
+.titel{
+  padding: 3%;
+  text-align:center;
+}
+p{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.content3{
+  position:fixed;
+  
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  padding-left: 20%;
+  margin-top: 5%;
+}

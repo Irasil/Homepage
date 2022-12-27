@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Kobold - Menu</title>
+    <link rel="stylesheet" href="..\style.css">
+    <link rel="shortcut icon" href="..\Favicon/favicon.png" type="image/x-icon">
+    <script>window.onload = function (){openCity(event, 'Burger')
+            document.getElementById('Burger1').className += " active";
+;}</script>
+<style>
+  div.centerlist {
+    text-align: center;
+  }
+  
+  ol.liste {
+    display: inline-block;
+    text-align: left;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5%;
+      }
+  </style>
+</head>
+<body class="container"> 
+    
+    <div id="banner" titel="banner"></div>  
+
+    <div >
+        <ul>
+        <li ><a  class="a1"  href="..\index.html">Home</a></li>
+        <li class="active"><a class="a1" href="menu.html">Menu</a></li>
+        <li><a  class="a1" href="about.html">About</a></li>
+        <li><a  class="a1" href="gallery.html">Gallery</a></li>
+        <li ><a  class="a1" href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+<div class="content">
+    <br>
+        <h1 style="font-family: Garamond, serif ;font-size: 48px;">The Menu</h1>
+        
+        <div class="tab">
+           
+          <button class="tablinks" id="Burger1" onclick="openCity(event, 'Burger')">Burger</button>
+          <button class="tablinks" onclick="openCity(event, 'Salads')">Salads</button>
+          <button class="tablinks" onclick="openCity(event, 'Starter')">Starter</button>
+        </div>
+        
+        <div id="Burger" class="tabcontent">
+            <table>
+                <tr class="tr1">
+                  <th>  Dishes</th>
+                  <th >Price</th>
+                </tr>
+                <tr class="tr1">
+                  <td> Classic Burger</td>
+                  <td >50 CHF</td>
+                </tr>
+                <tr class="tr1">
+                  <td>Cheese Burger</td>
+                  <td  >27 CHF</td>
+                </tr>
+                <tr class="tr1">
+                  <td>Regionaler Raclette Burger</td>
+                  <td  >34 CHF</td>
+                </tr>
+                <tr class="tr1">
+                    <td> El Diablo</td>
+                    <td >53 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td> Tex Mex Burgerr</td>
+                    <td >23 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td>Steak Burger</td>
+                    <td  >89 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td>Bacon Burger</td>
+                    <td  >67 CHF</td>
+                  </tr>
+              </table>
+        </div>
+        
+        <div id="Salads" class="tabcontent">
+            <table>
+                <tr class="tr1">
+                  <th>  Dishes</th>
+                  <th >Price</th>
+                </tr>
+                <tr class="tr1">
+                  <td> Quesadillas Salzturm</td>
+                  <td >52 CHF</td>
+                </tr>
+                <tr class="tr1">
+                  <td>Quesadillas norteñas</td>
+                  <td  >25 CHF</td>
+                </tr>
+                <tr class="tr1">
+                  <td>Quesadillas con carne</td>
+                  <td  >24 CHF</td>
+                </tr>
+                <tr class="tr1">
+                    <td> Quesadillas pollo</td>
+                    <td >23 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td> Burrito con carne</td>
+                    <td >22 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td>Steak Burger</td>
+                    <td  >23 CHF</td>
+                  </tr>
+                  
+              </table>
+        </div>
+        
+        <div id="Starter" class="tabcontent">
+            <table>
+                <tr class="tr1">
+                  <th>  Dishes</th>
+                  <th >Price</th>
+                </tr>
+                <tr class="tr1">
+                  <td> Guacamole</td>
+                  <td >13 CHF</td>
+                </tr>
+                <tr class="tr1">
+                  <td>CPico de gallo</td>
+                  <td  >31 CHF</td>
+                </tr>
+                <tr class="tr1">
+                  <td>Enchiladas tricolor</td>
+                  <td  >32 CHF</td>
+                </tr>
+                <tr class="tr1">
+                    <td> Salsa Roja Ranchera</td>
+                    <td >23 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td> Sauerrahm</td>
+                    <td >4 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td>Hausgemachte Chili Sauc</td>
+                    <td  >22 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td>Fajita con gambas</td>
+                    <td  >21 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td>Fajita con carn</td>
+                    <td  >12 CHF</td>
+                  </tr>
+                  <tr class="tr1">
+                    <td>Pro extra Tortillar</td>
+                    <td  >14 CHF</td>
+                  </tr>
+              </table>
+        </div>
+        <div class="centerlist">
+          <div class="text"><H2>Unsere Topseller</H2></div>
+          <ol class="liste" >
+            <li>Hausgemachte Chili Sauce</li><br>
+            <li>Cheese Burger</li><br>
+            <li>Salsa Roja Ranchera</li><br>
+            <li>Classic Burger</li><br>
+            <li>Pro extra Tortillar</li><br>
+            <li>Steak Burger</li><br>
+            <li>Bacon Burger</li><br>
+            <li>Guacamole</li><br>
+            <li>Enchiladas tricolor</li><br>
+            <li>Quesadillas norteñas</li><br>
+          </ol>
+        </div>
+        <script>
+        function openCity(evt, essen) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(essen).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+    
+</div>
+
+<footer class="footer">
+    <div class="drittel">
+       <br><br><br>
+        <div class="text1">© Copyright 2022. All Rights Reserved</div>
+    </div>
+    <div class="drittel">
+        <div class="follow">Follow us</div>        
+        <a class="follow" href="..\index.html" title="Link zu Facebook"> <img src="..\favicon/logo-social-fb-facebook-icon.svg" style="width:32px" > </a> 
+        <a class="follow" href="..\index.html" title="Link zu Instagram"> <img src="..\favicon/174855.png" style="width:32px" > </a> 
+        <a class="follow" href="..\index.html" title="Link zu Youtube"> <img src="..\favicon/32x32-youtube-icon-23.jpg" style="width:32px" >         
+    </div>
+    <div class="drittel">
+        <br>
+        <a class="text1" href="impressum.html">Imressum</a><br>
+        <a class="text1" href="data.html">Datenschutz</a><br>
+        <a class="text1" href="agb.html">AGB</a><br>
+    </div>
+</footer>
+
+</body>
+</html>

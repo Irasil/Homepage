@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Kobold - Gallery</title>
+    <link rel="stylesheet" href="..\style.css">
+    <link rel="shortcut icon" href="..\Favicon/favicon.png" type="image/x-icon">
+    <style>
+        .upload{
+            background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem; 
+        }
+    </style>
+</head>
+
+<body class="container"> 
+    
+    <div id="banner" titel="banner"></div>  
+
+    <div >
+        <ul>
+        <li ><a  class="a1"  href="..\index.html">Home</a></li>
+        <li ><a class="a1" href="menu.html">Menu</a></li>
+        <li><a  class="a1" href="about.html">About</a></li>
+        <li class="active" ><a  class="a1" href="gallery.html">Gallery</a></li>
+        <li><a  class="a1" href="contact.html">Contact</a></li>        
+        </ul>
+    </div>
+
+<div class="content">
+    <div class="row"> 
+        <div class="column">
+          <img src="..\Bilder/MANITO_BADEN-10.jpg" style="width:100%">
+          <img src="..\Bilder/MANITO_BADEN-11.jpg" style="width:80%">
+          <img src="..\Bilder/MANITO_BADEN-13.jpg" style="width:100%">
+          <img src="..\Bilder/MANITO_BADEN-14.jpg" style="width:100%">
+          
+        </div>
+        <div class="column">
+          <img src="..\Bilder/MANITO_BADEN-15.jpg" style="width:120%">
+          <img src="..\Bilder/MANITO_BADEN-17.jpg" style="width:70%">
+          <img src="..\Bilder/MANITO_BADEN-18.jpg" style="width:100%">
+          <img src="..\Bilder/MANITO_BADEN-22.jpg" style="width:100%">
+        </div>  
+        <div class="column">
+            <img src="..\Bilder/MANITO_BADEN-28.jpg" style="width:100%">
+            <img src="..\Bilder/MANITO_BADEN-30.jpg" style="width:100%">
+            <img src="..\Bilder/MANITO_BADEN-4.jpg" style="width:100%">
+           
+        </div>
+        <div class="text">
+            <div class="form" style="margin-top: 5%;">
+                <form action="..\php/upload.php" method="post" enctype="multipart/form-data">
+                  <h2 class="label">Eigene Bilder hochladen und Gutschein gewinnen</h2>          
+                  
+                  <input style="display:none" name="fileToUpload" type="file" id="actual-btn" required hidden/>
+                  <label class="upload" for="actual-btn">Choose File</label><br><br>
+                  <input type="submit" value="Submit" name="submit">
+                </form>
+        </div>
+        
+    
+      </div>
+    
+</div>
+
+<footer class="footer">
+    <div class="drittel">
+       <br><br><br>
+        <div class="text1">© Copyright 2022. All Rights Reserved</div>
+    </div>
+    <div class="drittel">
+        <div class="follow">Follow us</div>        
+        <a class="follow" href="..\index.html" title="Link zu Facebook"> <img src="..\favicon/logo-social-fb-facebook-icon.svg" style="width:32px" > </a> 
+        <a class="follow" href="..\index.html" title="Link zu Instagram"> <img src="..\favicon/174855.png" style="width:32px" > </a> 
+        <a class="follow" href="..\index.html" title="Link zu Youtube"> <img src="..\favicon/32x32-youtube-icon-23.jpg" style="width:32px" >         
+    </div>
+    <div class="drittel">
+        <br>
+        <a class="text1" href="impressum.html">Imressum</a><br>
+        <a class="text1" href="data.html">Datenschutz</a><br>
+        <a class="text1" href="agb.html">AGB</a><br>
+    </div>
+</footer>
+
+</body>
+</html>
