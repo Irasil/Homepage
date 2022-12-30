@@ -38,15 +38,32 @@ document.addEventListener("click", (e) => {
             navToggler.classList.remove("hide");
             document.querySelector(".overlay").classList.remove("active");
         }, 100);
-    }
-        
+    }        
 });
+
+
+
+window.onload = function() {
+    if (document.querySelector("section.active") === null){
+    document.querySelector("#home").classList.add("active");
+    }
+    else{
+        document.querySelector("section.active").classList.remove("active", "fade-out");
+        document.querySelector(location.hash).classList.add("active");
+        window.scrollTo(0, 0);
+        document.body.classList.remove("hide-scrolling");
+        navToggler.classList.remove("hide");
+        document.querySelector(".overlay").classList.remove("active");
+    }
+}
+
 
 window.onhashchange = function() {
         console.log(location.hash);  
     
     if (location.hash !== "") {
     setTimeout(() => {
+        
         document.querySelector("section.active").classList.remove("active", "fade-out");
         document.querySelector(location.hash).classList.add("active");
         window.scrollTo(0, 0);

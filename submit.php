@@ -14,5 +14,5 @@
 
     fclose($data_file);
 
-    header("Location: index.html");
+    header("Location: https://www.irasil.ch/simonstauffer.html");
 ?>
