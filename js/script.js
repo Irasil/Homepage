@@ -109,12 +109,18 @@ tabsContainer.addEventListener("click", (e) => {
 
 /* Portfolio Item Details Popup */
 document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("view-project-btn")) {
+    if (e.target.classList.contains("view-project-btn") && e.target.classList.contains("thumbnailimage")) {
+        togglePortfolioPopup();
+        document.querySelector(".portfolio-popup").scrollTo(0, 0);
+        portfolioItemDetails(e.target.parentElement.parentElement);
+    }else if(e.target.classList.contains("view-project-btn")) {
         togglePortfolioPopup();
         document.querySelector(".portfolio-popup").scrollTo(0, 0);
         portfolioItemDetails(e.target.parentElement);
-    }
-})
+}
+});
+
+
 function togglePortfolioPopup() {
     document.querySelector(".portfolio-popup").classList.toggle("open");
     document.body.classList.toggle("hide-scrolling");
